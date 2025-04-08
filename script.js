@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Datos de documentos
     const documentos = {
         parcial1: [
-            { nombre: "Actividad 1 - Mapa conceptual de los tipos de Nubes", tipo: "PDF", enlace: "#", icono: "fa-file-pdf", meta: "Creado en la libreta" },
+            { nombre: "Actividad 1 - Mapa conceptual de los tipos de Nubes", tipo: "PDF", enlace: "#", icono: "fa-file-pdf", meta: "Creado en libreta" },
             { nombre: "Actividad 2 - Tabla comparativa de tipos de almacenamiento en la nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1rAoml9ZBJVThb-ofX9oU2w2Pc8CLrpte/view", icono: "fa-file-pdf", meta: "Creado en canva" },
             { nombre: "Actividad 3 - Valores éticos digitales", tipo: "PDF", enlace: "#", icono: "fa-file-pdf", meta: "Creado en libreta" },
             { nombre: "Actividad 4 - Herramientas de almacenamiento en la nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1t7xVTERM3lyGmClol6ku5hTwvqJBUt7V/view", icono: "fa-file-pdf", meta: "Creado en canva" },
