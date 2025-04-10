@@ -2,14 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Datos de documentos
     const documentos = {
         parcial1: [
-            { nombre: "Actividad 1 - Mapa conceptual de los tipos de Nubes", tipo: "PDF", enlace: "#", icono: "fa-file-pdf", meta: "Creado en libreta" },
+            { nombre: "Actividad 1 - Mapa conceptual de la Nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1ISdS7ajZkTzHEt9umbm93tpqoSfAOx6f/view?usp=drive_link", icono: "fa-file-pdf", meta: "Creado en la libreta" },
             { nombre: "Actividad 2 - Tabla comparativa de tipos de almacenamiento en la nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1rAoml9ZBJVThb-ofX9oU2w2Pc8CLrpte/view", icono: "fa-file-pdf", meta: "Creado en canva" },
-            { nombre: "Actividad 3 - Valores éticos digitales", tipo: "PDF", enlace: "#", icono: "fa-file-pdf", meta: "Creado en libreta" },
+            { nombre: "Actividad 3 - Valores éticos digitales", tipo: "PDF", enlace: "https://drive.google.com/file/d/16KiBAPhHizYJ9PzpxvW4CU6eSi9weZer/view?usp=drive_link", icono: "fa-file-pdf", meta: "Creado en libreta" },
             { nombre: "Actividad 4 - Herramientas de almacenamiento en la nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1t7xVTERM3lyGmClol6ku5hTwvqJBUt7V/view", icono: "fa-file-pdf", meta: "Creado en canva" },
             { nombre: "Actividad 5 - Tipo de servicio de nubes", tipo: "PDF", enlace: "https://drive.google.com/file/d/1ya8WBbrt0AwBTUkN1VvXLabyDsCL54Di/view", icono: "fa-file-pdf", meta: "Creado en canva" },
             { nombre: "Actividad 6 - Valores Eticos", tipo: "PDF", enlace: "https://docs.google.com/document/d/1HeJKIOsZxSGjUBxxg-qhHUVpHa0fLcqMy8iiPDAYJGU/edit", icono: "fa-file-pdf", meta: "Creado en Google Docs" },
             { nombre: "Actividad 7 - Google Sites y otras plataformas", tipo: "PDF", enlace: "https://drive.google.com/file/d/1zeIku7iMuH3IEUfXHFpiGCBuGEDHIL_C/view", icono: "fa-file-pdf", meta: "Creado en canva" }
         ],
+
+
         parcial2: [
             { nombre: "Actividad 1 - Introducción - Cuestionario", tipo: "PDF", enlace: "https://drive.google.com/file/d/1xzIdRvLWHJsIJcbFhFeeR-FGOwCC5kJF/view", icono: "fa-file-pdf", meta: "Creado en libreta" },
             { nombre: "Actividad 2 - Tabla comparativa de tipos de archivos y formatos", tipo: "PDF", enlace: "https://drive.google.com/file/d/1vAAJhe6WFDfeeiPhL2Iikws8iG47afpb/view", icono: "fa-file-pdf", meta: "Creado en libreta" },
@@ -21,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
             { nombre: "Actividad 8 - Segunda revisión del sitio web", tipo: "Presencial", enlace: "#", icono: "fa-chalkboard-teacher", meta: "Evaluación en clase", mostrarBoton: false },
             { nombre: "Actividad 9 - Exposición por equipos del sitio", tipo: "Presencial", enlace: "#", icono: "fa-users", meta: "Presentación en aula", mostrarBoton: false }
         ]
+
+      
+
     };
 
     // Función para cargar documentos en un contenedor específico
@@ -31,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (documentos[parcial]) {
             documentos[parcial].forEach(doc => {
                 const icono = doc.icono || 'fa-file-pdf';
-                const textoBoton = doc.accion || (doc.tipo === 'MP4' ? 'Ver' : 'Descargar');
+                const textoBoton = doc.accion || (doc.tipo === 'MP4' ? 'Ver' : 'Consultar');
 
                 const documentoHTML = `
                 <div class="documento-item">
@@ -45,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${doc.enlace && doc.mostrarBoton !== false ? `
                     <div class="documento-acciones">
                         <a href="${doc.enlace}" target="_blank" class="btn-descargar">
-                            <i class="fas ${doc.tipo === 'MP4' ? 'fa-play' : 'fa-download'}"></i>
+                            <i class="fas ${doc.tipo === 'MP4' ? 'fa-play' : 'fa-mouse-pointer'}"></i>
                             ${textoBoton}
                         </a>
                     </div>
