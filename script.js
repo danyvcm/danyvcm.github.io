@@ -2,24 +2,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Datos de documentos
     const documentos = {
         parcial1: [
-            { nombre: "Actividad 1 - Mapa conceptual de la Nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1ISdS7ajZkTzHEt9umbm93tpqoSfAOx6f/view?usp=drive_link", icono: "fa-file-pdf", meta: "Creado en la libreta" },
-            { nombre: "Actividad 2 - Tabla comparativa de tipos de almacenamiento en la nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1rAoml9ZBJVThb-ofX9oU2w2Pc8CLrpte/view", icono: "fa-file-pdf", meta: "Creado en canva" },
-            { nombre: "Actividad 3 - Valores éticos digitales", tipo: "PDF", enlace: "https://drive.google.com/file/d/16KiBAPhHizYJ9PzpxvW4CU6eSi9weZer/view?usp=drive_link", icono: "fa-file-pdf", meta: "Creado en libreta" },
-            { nombre: "Actividad 4 - Herramientas de almacenamiento en la nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1t7xVTERM3lyGmClol6ku5hTwvqJBUt7V/view", icono: "fa-file-pdf", meta: "Creado en canva" },
-            { nombre: "Actividad 5 - Tipo de servicio de nubes", tipo: "PDF", enlace: "https://drive.google.com/file/d/1ya8WBbrt0AwBTUkN1VvXLabyDsCL54Di/view", icono: "fa-file-pdf", meta: "Creado en canva" },
-            { nombre: "Actividad 6 - Valores Éticos", tipo: "PDF", enlace: "https://docs.google.com/document/d/1HeJKIOsZxSGjUBxxg-qhHUVpHa0fLcqMy8iiPDAYJGU/edit", icono: "fa-file-pdf", meta: "Creado en Google Docs" },
-            { nombre: "Actividad 7 - Google Sites y otras plataformas", tipo: "PDF", enlace: "https://drive.google.com/file/d/1zeIku7iMuH3IEUfXHFpiGCBuGEDHIL_C/view", icono: "fa-file-pdf", meta: "Creado en canva" }
+            { nombre: "Actividad 1 - Mapa conceptual de la Nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/14W9sWQgRk7H6FDgeVyXGx_nObsq1S8ZR/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en la libreta" },
+            { nombre: "Actividad 2 - Tabla comparativa de tipos de almacenamiento en la nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1rAoml9ZBJVThb-ofX9oU2w2Pc8CLrpte/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en canva" },
+            { nombre: "Actividad 3 - Cuestionario", tipo: "PDF", enlace: "https://drive.google.com/file/d/1YliYOcMoRBHl4sBOfELK5UEQdHV7lEAJ/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en libreta" },
+            { nombre: "Actividad 4 - Herramientas de almacenamiento en la nube", tipo: "PDF", enlace: "https://drive.google.com/file/d/1MfWzzJydBn4pLwW30X_ZnlU36T4t1SLY/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en canva" },
+            { nombre: "Actividad 5 - Tipo de servicio de nubes", tipo: "PDF", enlace: "https://drive.google.com/file/d/1ya8WBbrt0AwBTUkN1VvXLabyDsCL54Di/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en canva" },
+            { nombre: "Actividad 6 - Valores Éticos", tipo: "PDF", enlace: "https://drive.google.com/file/d/106pA2yfS5SiMnABkqcVIA4ltzTq61bc8/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en Google Docs" },
+            { nombre: "Actividad 7 - Google Sites y otras plataformas", tipo: "PDF", enlace: "https://drive.google.com/file/d/1zeIku7iMuH3IEUfXHFpiGCBuGEDHIL_C/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en canva" }
         ],
 
 
         parcial2: [
-            { nombre: "Actividad 1 - Introducción - Cuestionario", tipo: "PDF", enlace: "https://drive.google.com/file/d/1xzIdRvLWHJsIJcbFhFeeR-FGOwCC5kJF/view", icono: "fa-file-pdf", meta: "Creado en libreta" },
-            { nombre: "Actividad 2 - Tabla comparativa de tipos de archivos y formatos", tipo: "PDF", enlace: "https://drive.google.com/file/d/1vAAJhe6WFDfeeiPhL2Iikws8iG47afpb/view", icono: "fa-file-pdf", meta: "Creado en libreta" },
-            { nombre: "Actividad 3 - Mapa visual de los archivos más utilizados", tipo: "PDF", enlace: "https://drive.google.com/file/d/1q9uHnfGJyFrfCmwPFrb6iopZbJi6Ux0n/view", icono: "fa-file-pdf", meta: "Creado en canva" },
-            { nombre: "Actividad 4 - Herramientas de conversión", tipo: "PDF", enlace: "https://drive.google.com/file/d/13brWgaXGw83CR0svCQe-9OK32h2Y0Lfq/view", icono: "fa-file-pdf", meta: "Creado en canva" },
-            { nombre: "Actividad 5 - Tabla descriptiva de herramientas de conversión", tipo: "PDF", enlace: "https://drive.google.com/file/d/1KvTzOTURZ-OuyqH4NTF9qcwWYMuGaZTU/view", icono: "fa-file-pdf", meta: "Creado en Canva" },
-            { nombre: "Actividad 6 - Video sobre Tuberculosis", tipo: "MP4", enlace: "https://drive.google.com/file/d/1AHB506gpl6vv7S4jn1duy9AN0Ns6SVp6/view", icono: "fa-file-video", meta: "Creado en Flexclip", accion: "Ver" },
-            { nombre: "Actividad 7 - Creación de sitio web", tipo: "HTML", enlace: "#", icono: "fa-file-code", meta: "Creado en HTMl", accion: "Visitar" },
+            { nombre: "Actividad 1 - Introducción - Cuestionario", tipo: "PDF", enlace: "https://drive.google.com/file/d/1xzIdRvLWHJsIJcbFhFeeR-FGOwCC5kJF/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en libreta" },
+            { nombre: "Actividad 2 - Tabla comparativa de tipos de archivos y formatos", tipo: "PDF", enlace: "https://drive.google.com/file/d/1vAAJhe6WFDfeeiPhL2Iikws8iG47afpb/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en libreta" },
+            { nombre: "Actividad 3 - Mapa visual de los archivos más utilizados", tipo: "PDF", enlace: "https://drive.google.com/file/d/1q9uHnfGJyFrfCmwPFrb6iopZbJi6Ux0n/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en canva" },
+            { nombre: "Actividad 4 - Herramientas de conversión", tipo: "PDF", enlace: "https://drive.google.com/file/d/13mUdlh8zfZFFmtU1y6O7gTX02O0KNT1A/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en canva" },
+            { nombre: "Actividad 5 - Tabla descriptiva de herramientas de conversión", tipo: "PDF", enlace: "https://drive.google.com/file/d/1KvTzOTURZ-OuyqH4NTF9qcwWYMuGaZTU/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en Canva" },
+            { nombre: "Actividad 6 - Video sobre Tuberculosis", tipo: "MP4", enlace: "https://drive.google.com/file/d/1AHB506gpl6vv7S4jn1duy9AN0Ns6SVp6/view?usp=sharing", icono: "fa-file-video", meta: "Creado en Flexclip", accion: "Ver" },
+            { nombre: "Actividad 7 - Creación de sitio web", tipo: "HTML", enlace: "https://github.com/danyvcm/danyvcm.github.io.git", icono: "fa-file-code", meta: "Creado en HTMl", accion: "Visitar" },
             { nombre: "Actividad 8 - Segunda revisión del sitio web", tipo: "Presencial", enlace: "#", icono: "fa-chalkboard-teacher", meta: "Evaluación en clase", mostrarBoton: false },
             { nombre: "Actividad 9 - Exposición por equipos del sitio", tipo: "Presencial", enlace: "#", icono: "fa-users", meta: "Presentación en aula", mostrarBoton: false }
         ]
