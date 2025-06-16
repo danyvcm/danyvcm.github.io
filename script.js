@@ -22,7 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
             { nombre: "Actividad 7 - Creación de sitio web", tipo: "HTML", enlace: "https://github.com/danyvcm/danyvcm.github.io.git", icono: "fa-file-code", meta: "Creado en HTMl", accion: "Visitar" },
             { nombre: "Actividad 8 - Segunda revisión del sitio web", tipo: "Presencial", enlace: "#", icono: "fa-chalkboard-teacher", meta: "Evaluación en clase", mostrarBoton: false },
             { nombre: "Actividad 9 - Exposición por equipos del sitio", tipo: "Presencial", enlace: "#", icono: "fa-users", meta: "Presentación en aula", mostrarBoton: false }
+        ],
+
+        parcial3: [
+             { nombre: "Actividad 1 - Importar y Exportar y los tipos de documentos permitidos por Google Apps", tipo: "PDF", enlace: "https://drive.google.com/file/d/1MG9BKDJvoKwe3gS-_zqHk6HROjVsV7HB/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en Canva" },
+            { nombre: "Actividad 2 - Cómo importar documentos", tipo: "PDF", enlace: "https://drive.google.com/file/d/1PbPVll4cCZg7pBhZQ1wSLgpNkHgdTb9L/view?usp=sharing", icono: "fa-file-pdf", meta: "Creado en Canva" },
+            { nombre: "Actividad 3 - Práctica de Importar y Exportar documentos", tipo: "PDF", enlace: "https://drive.google.com/file/d/1P7jJF6iImO80GZIaRny1TlJ5BxDHZNM4/view?usp=sharing", icono: "fa-file-pdf", meta: "Práctica" },
+            { nombre: "Actividad 4 - Prevención contra las adicciones", tipo: "PDF", enlace: "https://drive.google.com/file/d/1otyL4N1yL6c3e8yGexjroJTOuuGAGvX6/view?usp=sharing", icono: "fa-file-video", meta: "Creado en Canva" },
+            { nombre: "Actividad 5 - Imitación de maestros - Trabajo hecho en clase", tipo: "PDF", enlace: "", icono: "fa-users", meta: "Hecho en clase" },
+            { nombre: "Actividad 6 - Características de 3 compañeros", tipo: "PDF", enlace: "https://drive.google.com/file/d/1CaeZBBrxx67Sq4AZ1d7jeh0fx6uA85Af/view?usp=sharing", icono: "fa-users", meta: "Creado en libreta", accion: "Ver" },
+            { nombre: "Actividad 7 - Terminación del sitio web", tipo: "HTMl", enlace: "https://github.com/danyvcm/danyvcm.github.io.git", icono: "fa-file-code", meta: "Creado en HTMl", accion: "Visitar" },
         ]
+ 
+        
 
       
 
@@ -65,6 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cargar documentos para el parcial 1 y 2 al cargar la página
     cargarDocumentos('parcial1', 'documentos-parcial1');
     cargarDocumentos('parcial2', 'documentos-parcial2');
+    cargarDocumentos('parcial3', 'documentos-parcial3');
+    
+
+
 
     // Lógica para la barra de búsqueda
     const searchButton = document.getElementById('search-button');
